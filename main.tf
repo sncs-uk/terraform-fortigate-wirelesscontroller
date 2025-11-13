@@ -180,6 +180,7 @@ resource fortios_wirelesscontroller_wtpprofile profiles {
   dynamic radio_1 {
     for_each                        = { for a in (try(each.value.radios.1, []) == [] ? [] : ["1"]) : a => a}
     content {
+      radio_id                      = try(each.value.radios.1.radio_id, null)
       mode                          = try(each.value.radios.1.mode, null)
       band                          = try(each.value.radios.1.band, null)
       band_5g_type                  = try(each.value.radios.1.band_5g_type, null)
@@ -279,6 +280,7 @@ resource fortios_wirelesscontroller_wtpprofile profiles {
   dynamic radio_2 {
     for_each                        = { for a in (try(each.value.radios.2, []) == [] ? [] : ["1"]) : a => a}
     content {
+      radio_id                      = try(each.value.radios.2.radio_id, null)
       mode                          = try(each.value.radios.2.mode, null)
       band                          = try(each.value.radios.2.band, null)
       band_5g_type                  = try(each.value.radios.2.band_5g_type, null)
