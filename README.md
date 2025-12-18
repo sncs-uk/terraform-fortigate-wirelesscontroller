@@ -7,7 +7,7 @@ This terraform module configures some base wireless controller configuration on 
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.13.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.11.0 |
 | <a name="requirement_fortios"></a> [fortios](#requirement\_fortios) | >= 1.22.0 |
 
 ## Providers
